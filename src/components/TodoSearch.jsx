@@ -17,7 +17,7 @@ export default function TodoSearch() {
 	return (
 		<>
 			<div className="mt-6">
-				<form onSubmit={onSubmit}>
+				<form onSubmit={onSubmit} autoComplete='off'>
 					<div className="flex gap-2 items-start">
 						<div className="flex-1 min-w-0">
 							<div className="relative">
