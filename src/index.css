@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+	--color-primary-50: #eef6ff;
+	--color-primary-100: #d9eaff;
+	--color-primary-200: #bcdbff;
+	--color-primary-300: #8ec5ff;
+	--color-primary-400: #59a6ff;
+	--color-primary-500: #2b7fff;
+	--color-primary-600: #1b63f5;
+	--color-primary-700: #144de1;
+	--color-primary-800: #173fb6;
+	--color-primary-900: #193a8f;
+	--color-primary-950: #142457;
+}
+
+body {
+	font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+::-webkit-scrollbar {
+	width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: var(--color-gray-300);
+}
+
+/* Animations */
+@keyframes draw {
+	from {
+		stroke-dashoffset: 100;
+	}
+
+	to {
+		stroke-dashoffset: 0;
+	}
+}
+
+@keyframes showStroke {
+	from {
+		stroke-dashoffset: 100;
+	}
+}
+
+@keyframes taskSlideIn {
+	from {
+		opacity: 0;
+		translate: 0 -0.5rem;
+	}
+}
+
+@keyframes checkBounce {
+	40% {
+		scale: 1.2;
+	}
+}
